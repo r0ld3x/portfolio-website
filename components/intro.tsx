@@ -118,8 +118,8 @@ export default function Intro() {
                 y2="38.142"
                 gradientUnits="userSpaceOnUse"
               >
-                <stop offset="0" stop-color="#33bef0"></stop>
-                <stop offset="1" stop-color="#0a85d9"></stop>
+                <stop offset="0" stopColor="#33bef0"></stop>
+                <stop offset="1" stopColor="#0a85d9"></stop>
               </linearGradient>
               <path
                 fill="url(#BiF7D16UlC0RZ_VqXJHnXa_oWiuH0jFiU0R_gr1)"
