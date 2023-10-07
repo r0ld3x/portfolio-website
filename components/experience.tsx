@@ -20,7 +20,7 @@ export default function Experience() {
       <SectionHeading>My experience</SectionHeading>
       <p className="capitalize font-semibold">
         All my projects are my experiences. if you want to check my capabalities
-        then Hire Me!
+        then Hire Me :)
       </p>
       {/* <VerticalTimeline lineColor="">
         {experiencesData.map((item, index) => (
