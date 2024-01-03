@@ -1,9 +1,8 @@
 "use client";
 
-import React from "react";
-import SectionHeading from "./section-heading";
-import { motion } from "framer-motion";
 import { useSectionInView } from "@/lib/hooks";
+import { motion } from "framer-motion";
+import SectionHeading from "./section-heading";
 
 export default function About() {
   const { ref } = useSectionInView("About");
@@ -18,19 +17,27 @@ export default function About() {
       id="about"
     >
       <SectionHeading>About me</SectionHeading>
-      <p className="mb-3">
-        I'm an 18-year-old student who's all about{" "}
-        <span className="font-semibold">gaming</span>,{" "}
-        <span className="font-semibold">coding</span>, and{" "}
-        <span className="font-semibold">exploring our beautiful planet</span>.
-        I'm learning <span className="font-semibold">Flutter</span> for making
-        cross platform apps, love <span className="font-semibold">Python</span>{" "}
-        for its versatility, and enjoy using{" "}
-        <span className="font-semibold">Next.js</span> for creating dynamic
-        websites. I also have a keen interest in space. I'm fascinated by the{" "}
-        cosmos, from stars to planets and beyond. Exploring space and learning
-        about its mysteries is something that truly excites me.{" "}
-        <span className="font-semibold">Spreading Positivity</span> :)
+      <p className="mt-3">
+        At <i className="text-blue-500">18</i>, I am a student residing in
+        India, aspiring to become a successful software engineer. Passionate
+        about space, I am both an astrophile and a coder. My coding journey
+        involves proficiency in{" "}
+        <strong className="text-[#FFD43B]">Python</strong>,{" "}
+        <strong className="text-cyan-500">Next.js</strong>, and{" "}
+        <strong className="text-[#AEB2D5]">PHP</strong>. Currently, I am
+        exploring the realms of mobile app development with{" "}
+        <strong className="text-[#42A5F5]">Flutter</strong> and{" "}
+        <strong className="text-[#61DBFB]">React Native</strong>. The vibrant
+        world of technology fuels my curiosity and drive. Beyond coding, the
+        cosmos beckons me with its mysteries. From the{" "}
+        <i className="text-yellow-500">shimmering stars</i> to the enigmatic
+        planets, the vast expanse of space captivates my imagination. Exploring
+        the wonders of the universe is not just a fascination; it's a thrilling
+        journey that fuels my boundless curiosity.{" "}
+        <span className="text-[#FF6347]">Spreading positivity</span> is my
+        mission, whether it's through writing code, exploring the wonders of the
+        universe, or simply sharing inspiration. In every pursuit, I aim to
+        create a ripple effect of positivity and curiosity.
       </p>
     </motion.section>
   );

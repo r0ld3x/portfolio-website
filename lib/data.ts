@@ -1,13 +1,16 @@
+import bollyFlix from "@/public/bollyflix.png";
+import flutflix from "@/public/flutflix.jpg";
+import flutterTodoApp from "@/public/flutter-todo-app.jpg";
+import googleTranalateApi from "@/public/google-translate-php.png";
+import reactMusicPlayer from "@/public/react-music-player.png";
+import teraboxDownloaderBot from "@/public/terabox-download-bot.png";
+import teraboxDownloader from "@/public/terabox-downloader.png";
+import textToSpeech from "@/public/text-to-speech.png";
+import userver from "@/public/userver.jpg";
 import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-import flutflix from "@/public/flutflix.jpg";
-import reactMusicPlayer from "@/public/react-music-player.png";
-import textToSpeech from "@/public/text-to-speech.png";
-import teraboxDownloader from "@/public/terabox-downloader.png";
-import bollyFlix from "@/public/bollyflix.png";
-import userver from "@/public/userver.jpg";
 
 export const links = [
   {
@@ -67,9 +70,17 @@ export const projectsData = [
   {
     title: "FlutFlix",
     description:
-      "I've built this Flutter app to utilizes the TMDB API and display information about movies like trending, top rated & upcoming.",
+      "Flutter application that allows users to search for movies, tv shows, and more.",
     tags: ["Flutter", "Dart", "TMDB API"],
     imageUrl: flutflix,
+    href: "https://github.com/r0ld3x/flutflix",
+  },
+  {
+    title: "ToDo App",
+    description:
+      "Flutter Todo App is a simple to-do app that helps you keep track of your daily tasks.",
+    tags: ["Flutter", "Dart"],
+    imageUrl: flutterTodoApp,
     href: "https://github.com/r0ld3x/flutflix",
   },
   {
@@ -112,25 +123,47 @@ export const projectsData = [
     href: "https://github.com/r0ld3x/bollyflix",
   },
   {
+    title: "Terabox downloader bot",
+    description: "A telegram bot which will download media files from terabox.",
+    tags: ["Python", "telethon", "terabox api"],
+    imageUrl: teraboxDownloaderBot,
+    href: "https://github.com/r0ld3x/terabox-downloader-bot",
+  },
+  {
     title: "Userver",
     description:
-      "Userver is a advanced telegram userbot which will handle real account easily. It will help you to manage your telegram account easily.",
-    tags: ["Python", "telethon", "mongodb", "redis"],
+      "Advanced telegram userbot which will handle real account easily. It will help you to manage your telegram account easily.",
+    tags: [
+      "Python",
+      "telethon",
+      "mongodb",
+      "redis",
+      "Object Oriented Programming",
+    ],
     imageUrl: userver,
+    href: "https://github.com/r0ld3x/userver",
+  },
+  {
+    title: "Google Translate",
+    description: "Api to translate text from one language to another.",
+    tags: ["PHP", "google translate api", "composer"],
+    imageUrl: googleTranalateApi,
     href: "https://github.com/r0ld3x/userver",
   },
 ] as const;
 
 export const skillsData = [
+  "Python",
   "HTML",
   "CSS",
   "JavaScript",
   "TypeScript",
-  "Flutter",
-  "PHP",
   "React",
   "Next.js",
   "Node.js",
+  "Flutter",
+  "React Native",
+  "PHP",
   "Telegram API",
   "Git",
   "Tailwind",
@@ -139,6 +172,5 @@ export const skillsData = [
   "Redis",
   "Express",
   "MySQL",
-  "Python",
   "Selenium",
 ] as const;

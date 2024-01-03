@@ -1,14 +1,12 @@
 "use client";
 
-import Image from "next/image";
-import React from "react";
-import { motion } from "framer-motion";
-import Link from "next/link";
-import { BsArrowRight, BsLinkedin } from "react-icons/bs";
-import { HiDownload } from "react-icons/hi";
-import { FaGithubSquare } from "react-icons/fa";
-import { useSectionInView } from "@/lib/hooks";
 import { useActiveSectionContext } from "@/context/active-section-context";
+import { useSectionInView } from "@/lib/hooks";
+import { motion } from "framer-motion";
+import Image from "next/image";
+import Link from "next/link";
+import { BsArrowRight } from "react-icons/bs";
+import { FaGithubSquare } from "react-icons/fa";
 
 export default function Intro() {
   const { ref } = useSectionInView("Home", 0.5);
@@ -42,8 +40,13 @@ export default function Intro() {
           </motion.div>
 
           <motion.span
-            className="absolute bottom-0 right-0 text-4xl"
+            className="absolute bottom-0 right-0 text-4xl cursor-pointer"
             initial={{ opacity: 0, scale: 0 }}
+            whileHover={{
+              scale: 1.2,
+              rotate: [-10, 10, -10, 10, 0],
+              transition: { duration: 0.5 },
+            }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{
               type: "spring",
@@ -62,33 +65,11 @@ export default function Intro() {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <span className="font-bold">Heya!, myself Roldex Stark.</span> A
-        versatile <span className="font-bold">full-stack developer</span> with a
-        core focus on{" "}
-        <Link
-          href={"https://nextjs.org/"}
-          target="_blank"
-          className="underline"
-        >
-          Next.js
-        </Link>
-        , a proficiency in{" "}
-        <Link
-          href={"https://www.python.org/"}
-          target="_blank"
-          className="font-bold"
-        >
-          Python
-        </Link>
-        , and expertise in{" "}
-        <Link
-          href={"https://flutter.dev/"}
-          target="_blank"
-          className="font-bold"
-        >
-          Flutter
-        </Link>
-        ! 😎
+        <span className="font-bold">
+          Hey there! I'm Roldex Stark, a dynamic full-stack developer
+          specializing in Next.js. I bring solid skills in Python and mastery in
+          Flutter and React Native to the table! 😎
+        </span>
       </motion.h1>
 
       <motion.div

@@ -1,15 +1,15 @@
 "use client";
 
+import { useTheme } from "@/context/theme-context";
+import { experiencesData } from "@/lib/data";
+import { useSectionInView } from "@/lib/hooks";
 import React from "react";
-import SectionHeading from "./section-heading";
 import {
   VerticalTimeline,
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
-import { experiencesData } from "@/lib/data";
-import { useSectionInView } from "@/lib/hooks";
-import { useTheme } from "@/context/theme-context";
+import SectionHeading from "./section-heading";
 
 export default function Experience() {
   const { ref } = useSectionInView("Experience");
@@ -22,7 +22,7 @@ export default function Experience() {
         All my projects are my experiences. if you want to check my capabalities
         then Hire Me :)
       </p>
-      {/* <VerticalTimeline lineColor="">
+      <VerticalTimeline lineColor="">
         {experiencesData.map((item, index) => (
           <React.Fragment key={index}>
             <VerticalTimelineElement
@@ -56,7 +56,7 @@ export default function Experience() {
             </VerticalTimelineElement>
           </React.Fragment>
         ))}
-      </VerticalTimeline> */}
+      </VerticalTimeline>
     </section>
   );
 }
