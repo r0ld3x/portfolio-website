@@ -38,7 +38,7 @@ export const projectsData = [
       "LangChain",
     ],
     imageUrl: doctalk,
-    href: "https://github.com/r0ld3x/doctalk",
+    href: "https://doctalk.pro/",
   },
 
   {
