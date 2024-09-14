@@ -76,7 +76,7 @@ export default function Intro() {
           animate={{ opacity: 1, x: 0 }}
           transition={{ delay: 0.3, duration: 0.6, ease: "easeOut" }}
         >
-          full-stack developer.
+          full-stack and python developer.
         </motion.span>
         <AnimatedEmoji />
       </motion.h1>

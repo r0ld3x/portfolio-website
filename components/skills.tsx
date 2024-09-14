@@ -82,11 +82,6 @@ export default function Skills() {
             key={index}
             variants={fadeInAnimationVariants}
             custom={index}
-            whileHover={{
-              scale: 1.1,
-              rotate: 3,
-              boxShadow: "0px 8px 20px rgba(0, 0, 0, 0.3)",
-            }}
             whileTap={{ scale: 0.95 }}
             transition={{ duration: 0.3 }}
           >

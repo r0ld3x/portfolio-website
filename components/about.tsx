@@ -26,7 +26,7 @@ export default function About() {
       animate="visible"
       variants={textVariants}
       whileHover={{ scale: 1.02 }}
-      whileTap={{ scale: 0.98 }}
+      // whileTap={{ scale: 0.98 }}
       style={{
         opacity: 1,
       }}
@@ -34,57 +34,45 @@ export default function About() {
       viewport={{ once: true }}
     >
       <SectionHeading>About Me</SectionHeading>
-      <motion.p
+      <div className="max-w-4xl mx-auto px-6">
+        <p className="text-lg leading-relaxed text-zinc-300">
+          <span className="text-blue-500 font-medium">At 19,</span> my coding
+          journey began as a fun experiment when I was 16, and now it has
+          evolved into my passion and profession. Currently in{" "}
+          <span className="font-semibold">12th grade</span>, I’m constantly
+          learning new technologies and working to improve myself, my studies,
+          and my code every day. I started coding in{" "}
+          <span className="text-blue-500 font-medium">2016</span>, and three
+          years later, expanded into full-stack development, including Python.
+        </p>
+        <p className="text-lg leading-relaxed text-zinc-300 mt-4">
+          Beyond coding, I’m an{" "}
+          <span className="font-semibold">astrophile</span> and{" "}
+          <span className="font-semibold">bibliophile</span>, always aiming to
+          be a better human being. I’m dedicated to continually honing my
+          skills, pushing my limits, and becoming better than I was before. I
+          will keep striving to improve myself for a prosperous and bright
+          future, focusing on personal growth, productivity, and especially my
+          coding skills.
+        </p>
+      </div>
+
+      {/* <motion.p
         className="mt-6 text-lg leading-relaxed sm:text-xl md:text-2xl max-w-3xl mx-auto px-4"
         variants={textVariants}
       >
-        Hi, I'm Roldex Stark, a 19-year-old software engineering student from
-        India. Passionate about technology and space, I constantly strive to
-        expand my knowledge. My skill set includes{" "}
-        <motion.strong
-          className="text-[#FFD43B] font-semibold"
-          variants={wordVariants}
-        >
-          Python
-        </motion.strong>{" "}
-        and{" "}
-        <motion.strong
-          className="text-cyan-500 font-semibold"
-          variants={wordVariants}
-        >
-          JavaScript
-        </motion.strong>
-        , and I'm currently exploring{" "}
-        <motion.strong
-          className="text-[#61DBFB] font-semibold"
-          variants={wordVariants}
-        >
-          React Native
-        </motion.strong>{" "}
-        and{" "}
-        <motion.strong
-          className="text-[#61DBFB] font-semibold"
-          variants={wordVariants}
-        >
-          Full Stack Development
-        </motion.strong>
-        . My curiosity takes me from the{" "}
-        <motion.i
-          className="text-yellow-500 font-semibold"
-          variants={wordVariants}
-        >
-          stars
-        </motion.i>{" "}
-        to the{" "}
-        <motion.i
-          className="text-yellow-500 font-semibold"
-          variants={wordVariants}
-        >
-          planets
-        </motion.i>{" "}
-        , fueling my passion for discovery. Through my work and my journey in
-        the cosmos, I aim to spread positivity and inspire others.
-      </motion.p>
+        At 19, my coding journey began as a fun experiment when I was 16, and
+        now it has evolved into my passion and profession. Currently in 12th
+        grade, I’m constantly learning new technologies and working to improve
+        myself, my studies, and my code every day. I started coding in 2016, and
+        three years later, expanded into full-stack development, including
+        Python. Beyond coding, I’m an astrophile and bibliophile, always aiming
+        to be a better human being. I’m dedicated to continually honing my
+        skills, pushing my limits, and becoming better than I was before. I will
+        keep striving to improve myself for a prosperous and bright future,
+        focusing on personal growth, productivity, and especially my coding
+        skills.
+      </motion.p> */}
     </motion.section>
   );
 }
